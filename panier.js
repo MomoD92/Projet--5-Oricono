@@ -120,7 +120,7 @@ form.addEventListener("submit", (e) => {
         .then((datas) => {
             const orderId = datas.orderId;
 
-            window.location.href = `confirm.html?ncomm=${orderId}`;
+            window.location.href = 'confirm.html?ncomm=${orderId}';
 
         })
 
