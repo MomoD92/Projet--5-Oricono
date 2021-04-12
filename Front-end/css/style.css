@@ -1,0 +1,39 @@
+body {
+    padding: 70px 0;
+}
+
+header {
+    background-color: #F3E9F1;
+}
+
+header a img {
+    width: 180px;
+    height: 44px;
+}
+
+#navbarCollapse nav {
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: #F3E9F1;
+}
+
+main section {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+main.product {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/hero-bg.jpg") center center / cover no-repeat fixed;
+}
+
+.panierLine {
+    border: solid #17a2b8 1px;
+    border-radius: 10px;
+    padding: 10px 0 0px 0;
+}
