@@ -37,3 +37,67 @@ main.product {
     border-radius: 10px;
     padding: 10px 0 0px 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+main {
+    height: auto;
+    margin-bottom: 4em;
+}
+
+.mainForm {
+    background-color: rgba(155, 155, 155, 0.8);
+    padding: 20px;
+    color: white;
+}
+
+.mainForm form {
+    display: grid;
+    animation: ombre ease-in infinite alternate 500ms;
+}
+
+.mainForm form .firstDiv {
+    border-top: solid 1px white;
+}
+
+.mainForm form button {
+    background-color: #1A2B6D;
+    color: white;
+    border: none;
+}
+
+.mainForm form button:hover {
+    background-color: rgba(90, 101, 146, 1);
+}
+
+.mainForm form button button:active {
+    background-color: red;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid rgb(162, 162, 255);
+}
+
+.form-control:valid {
+    border: 1px solid green;
+}
+
+.form-control:invalid {
+    border: 1px solid red;
+}
+
+.msg {
+    font-size: .8em;
+    color: rgb(88, 1, 1);
+}
+
+.titleCommande {
+    margin-left: 10em;
+}
+
+#numeroCommande {
+    color: red;
+}

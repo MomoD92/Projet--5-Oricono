@@ -44,44 +44,90 @@
 
         <div class="center-block">
 
-            <p class="font-weight-bold text-center totalCount">Total de votre panier : <span id="finalPrice"></span></p>
+            <p class="font-weight-bold text-center totalCount">Le prix total de votre panier : <span id="finalPrice"></span></p>
 
         </div>
 
-        <a href="index.html" type="button" class="btn btn-outline-info btn-block">Continuer mes achats</a>
+        <a href="index.html" type="button" id="btnCom" class="btn btn-primary mb-3">Continuez vos achats</a>
+
+        <div class="row">
+            <div class="col mainForm">
+                <form method="POST" id="submitForm">
+                    <h3>Remplissez le formulaire pour valider la commande</h3>
+                    <p>Tous les champs de ce formulaire sont requis.</p>
+                    <div class="form-row firstDiv">
+                        <div class="form-group col-md-6">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" name="prenom" class="form-control" id="prenom" pattern="[a-zA-Z]{3,20}" placeholder="Votre prénom" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" class="form-control" id="nom" pattern="[a-zA-Z]{3,20}" placeholder="Votre nom" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="form-control" id="email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" placeholder="Votre e-mail" required>
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label for="adresse">Adresse de livraison</label>
+                            <input type="text" name="adresse" class="form-control" id="adresse" placeholder="12 rue Machin" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="ville">Ville</label>
+                            <input type="text" name="ville" class="form-control" id="ville" pattern="[a-zA-Z]{3,20}" required>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="cp">Code postal</label>
+                            <input type="text" name="cp" class="form-control" id="cp" pattern="((0[1-9])|([1-8])|(9[0-8])|(2A)|(2B))[0-9]{3}" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pays">Pays</label>
+                            <select id="pays" class="form-control">
+                                <option selected>Choisissez...</option>
+                                <option>A...</option>
+                                <option>B...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="envoyerFormulaire" type="submit" class="btn btn-primary">Confirmez la commande</button>
+                </form>
+            </div>
+        </div>
 
     </main>
-    <form class="container mt-4" method="POST" id="submitForm">
+
+    <!--
+        <form class="container-fluid mt-4" method="POST" id="submitForm">
         <div class="form-group">
             <label for="prenom">Prénom :</label>
-            <input type="text" name="prenom" placeholder=" Votre Prénom " class="col-5 " minlength="2 " id="prenom ">
+            <input type="text" name="prenom" placeholder=" Votre Prénom " class="col-3 " minlength="2 " id="prenom ">
         </div>
-
-        <div class="form-group ">
+        <div class="form-group">
             <label for="nom ">Nom :</label>
-            <input type="text " name="nom " placeholder="Votre Nom " class="col-5 " minlength="3 " id="nom ">
+            <input type="text " name="nom " placeholder="Votre Nom " class="col-3 " minlength="3 " id="nom ">
         </div>
-
         <div class="form-group ">
             <label for="adresse ">Adresse :</label>
             <input type="text " name="adresse " placeholder="Votre Adresse " class="col-6 " minlength="8 " id="adresse ">
         </div>
-
         <div class="form-group ">
             <label for="ville ">Ville :</label>
             <input type="text " name="ville " placeholder="Votre Ville " class="col-6 " minlength="1 " id="ville ">
         </div>
-
         <div class="form-group ">
             <label for="email ">Email :</label>
             <input type="email" name="email " placeholder="Votre Email " class="col-6 " id="email ">
         </div>
-
         <div class="form-group ">
-            <button id="btnCom " type="submit " class="btn btn-outline-info btn-block ">Commander</button>
+            <button id="btnCom" type="submit " class="btn btn-outline-info btn-block ">Commander</button>
         </div>
-
     </form>
+    -->
     <footer class="bg-dark text-light fixed-bottom py-4">
         <div class="container-fluid">
             <div class="row">
